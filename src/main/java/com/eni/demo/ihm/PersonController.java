@@ -4,6 +4,7 @@ import com.eni.demo.bo.Person;
 import com.eni.demo.service.PersonService;
 import com.eni.demo.service.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -17,6 +18,7 @@ public class PersonController {
     @Autowired
     PersonService personService;
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/show-persons")
     public String showPersons(Model model){
         // Appeler le métier
