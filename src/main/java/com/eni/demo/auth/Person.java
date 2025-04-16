@@ -1,4 +1,4 @@
-package com.eni.demo.bo;
+package com.eni.demo.auth;
 
 public class Person {
 

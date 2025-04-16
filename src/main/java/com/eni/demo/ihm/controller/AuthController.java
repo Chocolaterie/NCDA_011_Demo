@@ -1,4 +1,4 @@
-package com.eni.demo.ihm;
+package com.eni.demo.ihm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
