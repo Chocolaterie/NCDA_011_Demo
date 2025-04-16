@@ -1,9 +1,5 @@
 package com.eni.demo.service;
 
-import com.eni.demo.bo.Person;
-
-import java.util.List;
-
 public class ServiceResponse<T> {
     public String code;
     public String message;
