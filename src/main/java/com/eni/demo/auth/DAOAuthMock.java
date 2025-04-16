@@ -1,10 +1,12 @@
 package com.eni.demo.auth;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Profile("mock")
 @Component
 public class DAOAuthMock implements IDAOAuth {
 
